@@ -1,4 +1,3 @@
-import Button from "../components/BackgroundColor/Button";
 import ColorRegenerator from "../components/BackgroundColor/ColorRegenerator.jsx";
 
 const Project2 = () => {
