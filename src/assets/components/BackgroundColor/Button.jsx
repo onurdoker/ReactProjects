@@ -1,6 +1,8 @@
+import {useState} from "react";
+
 const Button = () => {
   return (
-      <button> Click Me</button>
+      <button> Generate Color (Generate Random Hex Color)</button>
   );
 };
 

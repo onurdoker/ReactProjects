@@ -1,16 +1,16 @@
 import Button from "../components/BackgroundColor/Button";
-import ColorRegenarator from "../components/BackgroundColor/ColorRegenarator";
+import ColorRegenerator from "../components/BackgroundColor/ColorRegenerator.jsx";
 
 const Project2 = () => {
 
   return (
       <div>
-        <h2>Project 2. Random Background Color</h2>
+        <h2>Project 2. Random Text Color</h2>
         <p>
-          Changing background color using buttons
+          Changing Text color using button
         </p>
 
-        <Button/>
+        <ColorRegenerator/>
 
       </div>
   );
