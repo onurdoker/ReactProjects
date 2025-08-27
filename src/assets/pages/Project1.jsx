@@ -8,7 +8,7 @@ function Project1() {
 
   const handleFontSizeIncrement = () => {
     // setFont (prevFont => prevFont +1)
-    setFont (prevFont => {
+    setFont ((prevFont) => {
       if (prevFont >= 20) {
         return prevFont;
       }
@@ -18,7 +18,7 @@ function Project1() {
 
   const handleFontSizeDecrement = () => {
     // setFont (prevFont => prevFont -1)
-    setFont (prevFont => {
+    setFont ((prevFont) => {
       if (prevFont <= 8) {
         return prevFont;
       } else {
