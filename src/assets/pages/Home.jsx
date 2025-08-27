@@ -11,10 +11,10 @@ function Home() {
         <li>
           <Link to="/project2">Project 2. Changing Text Color</Link>
         </li>
-        {/* <li>
+        <li>
           <Link to="/project3">Project 3.</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/project4">Project 4. Slider</Link>
         </li> */}
       </ul>
