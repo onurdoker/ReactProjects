@@ -7,9 +7,6 @@ const Button = ({
 }) => {
   return (
       <div className={css.p1_button}>
-        {/*<div style={{*/}
-        {/*  display: "flex",*/}
-        {/*}}>*/}
         <button onClick={handleFontSizeDecrement}> -</button>
         Font Size: {fontSize}
         <button onClick={handleFontSizeIncrement}> +</button>
