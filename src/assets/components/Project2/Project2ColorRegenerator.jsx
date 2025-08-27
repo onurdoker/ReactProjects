@@ -1,7 +1,7 @@
 import {useState} from "react";
-import Text from "./Text.jsx";
+import Project2Text from "./Project2Text.jsx";
 
-const ColorRegenerator = () => {
+const Project2ColorRegenerator = () => {
   const [hexColor, setHexColor] = useState ("#FFFFFF");
 
   const handleHexColorRegeneration = () => {
@@ -23,9 +23,9 @@ const ColorRegenerator = () => {
           Generated Hex Color: {hexColor}
         </div>
 
-        <Text color={hexColor}/>
+        <Project2Text color={hexColor}/>
       </>
   );
 };
 
-export default ColorRegenerator;
+export default Project2ColorRegenerator;

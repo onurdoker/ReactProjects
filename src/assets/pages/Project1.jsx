@@ -1,6 +1,6 @@
 import {useState} from "react";
 import css from "../components/Project1/Project1.module.css";
-import Project1Text from "../components/Project1/./Project1Text.jsx";
+import Project1Text from "../components/Project1/Project1Text.jsx";
 import Project1Button from "../components/Project1/Project1Button.jsx";
 
 function Project1() {

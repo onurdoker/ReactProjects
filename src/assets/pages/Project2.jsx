@@ -1,5 +1,5 @@
-import css from "../components/BackgroundColor/Project2.module.css";
-import ColorRegenerator from "../components/BackgroundColor/ColorRegenerator.jsx";
+import css from "../components/Project2/Project2.module.css";
+import Project2ColorRegenerator from "../components/Project2/Project2ColorRegenerator.jsx";
 
 const Project2 = () => {
 
@@ -10,7 +10,7 @@ const Project2 = () => {
           Changing Text color using button
         </p>
 
-        <ColorRegenerator/>
+        <Project2ColorRegenerator/>
 
       </div>
   );

@@ -1,4 +1,4 @@
-const Text = ({color}) => {
+const Project2Text = ({color}) => {
   return (
       <p
           style={{
@@ -15,4 +15,4 @@ const Text = ({color}) => {
   );
 };
 
-export default Text;
+export default Project2Text;
