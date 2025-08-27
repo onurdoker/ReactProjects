@@ -1,4 +1,5 @@
 import {useState} from "react";
+import css from "../components/FontSize/Project1.module.css";
 import Text from "../components/FontSize/Text";
 import Button from "../components/FontSize/Button";
 
@@ -27,20 +28,19 @@ function Project1() {
   };
 
   return (
-      <div>
+      <div className={css.body}>
         <h2>Project 1. Changing Font Size</h2>
-        <p>
-          Adjusting the font size of the text from 8 to 20 using buttons.
-        </p>
+        <p className={css.text}>Adjusting the font size of the text from 8 to 20 using buttons.</p>
 
-        <Button handleFontSizeIncrement={handleFontSizeIncrement}
-                handleFontSizeDecrement={handleFontSizeDecrement}
-                fontSize={font}/>
+        <Button
+            handleFontSizeIncrement={handleFontSizeIncrement}
+            handleFontSizeDecrement={handleFontSizeDecrement}
+            fontSize={font}
+        />
 
         <Text fontSize={font}/>
       </div>
   );
-
 }
 
 export default Project1;
