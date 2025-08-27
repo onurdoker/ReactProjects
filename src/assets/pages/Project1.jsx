@@ -1,7 +1,7 @@
 import {useState} from "react";
-import css from "../components/FontSize/Project1.module.css";
-import Text from "../components/FontSize/Text";
-import Button from "../components/FontSize/Button";
+import css from "../components/Project1/Project1.module.css";
+import Project1Text from "../components/Project1/./Project1Text.jsx";
+import Project1Button from "../components/Project1/Project1Button.jsx";
 
 function Project1() {
   const [font, setFont] = useState (12);
@@ -32,13 +32,13 @@ function Project1() {
         <h2>Project 1. Changing Font Size</h2>
         <p className={css.text}>Adjusting the font size of the text from 8 to 20 using buttons.</p>
 
-        <Button
+        <Project1Button
             handleFontSizeIncrement={handleFontSizeIncrement}
             handleFontSizeDecrement={handleFontSizeDecrement}
             fontSize={font}
         />
 
-        <Text fontSize={font}/>
+        <Project1Text fontSize={font}/>
       </div>
   );
 }

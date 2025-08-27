@@ -1,6 +1,6 @@
-import css from "../FontSize/Project1.module.css";
+import css from ".//Project1.module.css";
 
-const Button = ({
+const Project1Button = ({
   handleFontSizeIncrement,
   handleFontSizeDecrement,
   fontSize,
@@ -14,4 +14,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default Project1Button;
