@@ -1,0 +1,15 @@
+.body {
+    text-align: justify;
+}
+
+.text {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.p1_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
