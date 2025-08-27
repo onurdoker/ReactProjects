@@ -5,9 +5,10 @@ function Home() {
       <div>
         <h1>Main Page</h1>
         <ul>
-          <li><Link to="/project1">Changing Font Size</Link></li>
-          <li><Link to="/project2">Changing Background Color</Link></li>
-          <li><Link to="/project2">Project 2</Link></li>
+          <li><Link to="/project1">Project 1. Changing Font Size</Link></li>
+          <li><Link to="/project2">Project 2. Changing Background Color</Link></li>
+          <li><Link to="/project3">Project 3</Link></li>
+          <li><Link to="/project4">Project 4. Slider</Link></li>
         </ul>
       </div>
   );

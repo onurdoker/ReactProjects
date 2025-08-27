@@ -30,7 +30,7 @@ function Project1() {
       <div>
         <h2>Project 1. Changing Font Size</h2>
         <p>
-          Changing font size of text using buttons
+          Adjusting the font size of the text from 8 to 20 using buttons.
         </p>
 
         <Button handleFontSizeIncrement={handleFontSizeIncrement}
