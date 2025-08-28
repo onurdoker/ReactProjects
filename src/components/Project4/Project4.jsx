@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Project4Button from "./Project4Button.jsx";
 import Project4Slider from "./Project4Slider.jsx";
-import images from "./Project4images.jsx";
+import images from "./Project4Images.jsx";
 
 const Project4 = () => {
 

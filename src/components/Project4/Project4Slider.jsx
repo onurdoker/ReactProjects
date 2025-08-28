@@ -1,4 +1,5 @@
-import images from "./Project4images.jsx";
+import images from "./Project4Images.jsx";
+import css from "./Project4.module.css";
 
 const Project4Slider = ({slide}) => {
 
@@ -6,8 +7,6 @@ const Project4Slider = ({slide}) => {
       <div>
         <img src={images[slide]}
              alt=""
-             width="500"
-             height="400"
         />
       </div>
   );

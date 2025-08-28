@@ -1,4 +1,5 @@
-import images from "./Project4images.jsx";
+import images from "./Project4Images.jsx";
+import css from "./Project4.module.css";
 
 const slatNumber = images.length;
 const Project4Button = (
@@ -10,10 +11,14 @@ const Project4Button = (
 ) => {
 
   return (
-      <div>
-        <button onClick={handleSlideLeft}>Slide Left</button>
+      <div className={css.p4_button}>
+        <button
+            onClick={handleSlideLeft}>Slide Left
+        </button>
         Slide No: {slide + 1} / {slatNumber}
-        <button onClick={handleSlideRight}>Slide Right</button>
+        <button
+            onClick={handleSlideRight}>Slide Right
+        </button>
       </div>
   );
 };
