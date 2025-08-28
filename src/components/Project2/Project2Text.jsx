@@ -3,7 +3,6 @@ const Project2Text = ({color}) => {
       <p
           style={{
             color: color,
-            textAlign: "justify",
           }}>
         React is an open-source JavaScript library developed by Facebook, widely used for building user interfaces, particularly
         for single-page applications (SPAs). It follows a component-based architecture, enabling developers to create reusable and
