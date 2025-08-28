@@ -1,5 +1,5 @@
-import css from "../components/Project2/Project2.module.css";
-import Project2ColorRegenerator from "../components/Project2/Project2ColorRegenerator.jsx";
+import css from "./Project2.module.css";
+import Project2ColorRegenerator from "./Project2ColorRegenerator.jsx";
 
 const Project2 = () => {
 
