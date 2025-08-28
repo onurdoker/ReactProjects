@@ -1,21 +1,18 @@
-import {useState} from "react";
+import images from "./Project4images.jsx";
 
+const slatNumber = images.length;
 const Project4Button = (
-    handleSlideLeft,
-    handleSlideRight) => {
+    {
+      handleSlideLeft,
+      handleSlideRight,
+      slide,
+    },
+) => {
 
-  const [slide, setSlide] = useState (0);
-
-  const handleSlideLeft = () => {
-    setSlide (slide - 1);
-  };
-
-  const handleSlideRight = () => {
-    setSlide (slide + 1);
-  };
   return (
       <div>
         <button onClick={handleSlideLeft}>Slide Left</button>
+        Slide No: {slide + 1} / {slatNumber}
         <button onClick={handleSlideRight}>Slide Right</button>
       </div>
   );

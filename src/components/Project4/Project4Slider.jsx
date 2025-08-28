@@ -1,18 +1,15 @@
-import {useState} from "react";
+import images from "./Project4images.jsx";
 
-const Project4Slider = () => {
-
-  const Sliders = [
-    "./images/image1.jpg",
-  ];
-
-  const [slide, setSlide] = useState (0);
+const Project4Slider = ({slide}) => {
 
   return (
-      <>
-        <img src={Sliders[0]}
-             alt=""/>
-      </>
+      <div>
+        <img src={images[slide]}
+             alt=""
+             width="500"
+             height="400"
+        />
+      </div>
   );
 };
 
