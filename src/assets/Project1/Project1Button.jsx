@@ -1,4 +1,4 @@
-import css from ".//Project1.module.css";
+import css from "./Project1.module.css";
 
 const Project1Button = ({
   handleFontSizeIncrement,
