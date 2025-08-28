@@ -7,9 +7,9 @@ const Project1Button = ({
 }) => {
   return (
       <div className={css.p1_button}>
-        <button onClick={handleFontSizeDecrement}> -</button>
+        <button onClick={handleFontSizeDecrement}>-</button>
         Font Size: {fontSize}
-        <button onClick={handleFontSizeIncrement}> +</button>
+        <button onClick={handleFontSizeIncrement}>+</button>
       </div>
   );
 };
