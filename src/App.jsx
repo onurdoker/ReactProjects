@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import "./App.css";
-import Home from "./assets/Home.jsx";
-import Project1 from "./assets/Project1/Project1.jsx";
-import Project2 from "./assets/Project2/Project2.jsx";
-import Project3 from "./assets/Project3/Project3.jsx";
+import Home from "./Home.jsx";
+import Project1 from "./components/Project1/Project1.jsx";
+import Project2 from "./components/Project2/Project2.jsx";
+import Project3 from "./components/Project3/Project3.jsx";
 
 // import Project4 from "./assets/Project4/Project4.jsx";
 
