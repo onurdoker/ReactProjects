@@ -1,39 +1,58 @@
-const Project5Compare = ({mySelection}) => {
+import {useEffect, useState} from "react";
 
-  const PCSelection = Math.floor (Math.random () * 3);
-  const PCSelectionText = PCSelection === 0 ? "Rock" : PCSelection === 1 ? "Paper" : "Scissors";
-  console.log (PCSelection,
-      PCSelectionText);
+const Project5Compare = ({
+  mySelection,
+  handleGameResult,
+}) => {
+  const [pcSelection, setPcSelection] = useState ("");
+  const [gameResult, setGameResult] = useState ("");
 
-  // const result = () => {
-  //   if (mySelection === PCSelectionText) {
-  //     "Draw";
-  //   } else if
-  //   ((mySelection === "Rock" && PCSelectionText === "Paper") || (mySelection === "Paper" && PCSelectionText === "Scissors") || (mySelection === "Scissors" && PCSelectionText === "Rock") ){
-  //       return "PC Wins";
-  //     } else {
-  //       return "User Wins";
-  //     }
-  //   }
-  // };
+  useEffect (() => {
+        const PCSelection = Math.floor (Math.random () * 3);
+        const PCSelectionText = PCSelection === 0 ? "Rock" : PCSelection === 1 ? "Paper" : "Scissors";
 
-  const result = mySelection === PCSelectionText ? "Draw" : mySelection === "Rock" && PCSelectionText === "Scissors" || mySelection === "Paper" && PCSelectionText === "Rock" || mySelection === "Scissors" && PCSelectionText === "Paper" ? "User Wins" : "PC Wins";
+        let result;
 
-  console.log (result);
+        if (mySelection === PCSelectionText) {
+          result = "Draw";
+        } else if (
+            (mySelection === "Rock" && PCSelectionText === "Scissors") ||
+            (mySelection === "Paper" && PCSelectionText === "Rock") ||
+            (mySelection === "Scissors" && PCSelectionText === "Paper")
+        ) {
+          result = "User Wins";
+        } else {
+          result = "PC Wins";
+        }
+
+        console.log ("user selection 1 " + mySelection);
+        console.log ("pc selection 1 " + PCSelectionText);
+
+        setPcSelection (PCSelectionText);
+        setGameResult (result);
+        handleGameResult (result);
+
+        console.log ("user selection 2 " + mySelection);
+        console.log ("pc selection 2 " + PCSelectionText);
+      },
+      [
+        mySelection,
+        handleGameResult]);
 
   return (
-      <>
+      <div>
         <h3>Results:</h3>
         <p>
           User Selection : {mySelection}
         </p>
         <p>
-          PC Selection : {PCSelectionText}
+          PC Selection : {pcSelection}
         </p>
-        <p>
-          Result : {result}
+        <p style={{color: gameResult === "User Wins" ? "green" : gameResult === "PC Wins" ? "red" : "blue"}}>
+          Result : {gameResult}
         </p>
-      </>
+
+      </div>
 
   );
 };

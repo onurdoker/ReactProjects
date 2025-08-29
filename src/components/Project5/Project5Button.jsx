@@ -6,9 +6,9 @@ const Project5Button = ({handleMySelection}) => {
         alignItems: "center",
         justifyContent: "center",
       }}>
-        <button onClick={handleMySelection}>Rock</button>
-        <button onClick={handleMySelection}>Paper</button>
-        <button onClick={handleMySelection}>Scissors</button>
+        <button onClick={() => handleMySelection ("Rock")}>Rock</button>
+        <button onClick={() => handleMySelection ("Paper")}>Paper</button>
+        <button onClick={() => handleMySelection ("Scissors")}>Scissors</button>
       </div>
   );
 
