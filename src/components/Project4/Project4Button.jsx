@@ -1,5 +1,4 @@
 import images from "./Project4Images.jsx";
-import css from "./Project4.module.css";
 
 const slatNumber = images.length;
 const Project4Button = (
@@ -11,7 +10,12 @@ const Project4Button = (
 ) => {
 
   return (
-      <div className={css.p4_button}>
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}>
+
         <button
             onClick={handleSlideLeft}>Slide Left
         </button>
