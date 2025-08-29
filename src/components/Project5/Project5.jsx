@@ -7,7 +7,7 @@ const Project5 = () => {
   const [mySelection, setMySelection] = useState ("");
   const [userScore, setUserScore] = useState (0);
   const [pcScore, setPcScore] = useState (0);
-  
+
   const handleMySelection = (mySelection) => {
     setMySelection (mySelection);
 
@@ -26,7 +26,7 @@ const Project5 = () => {
     setUserScore (0);
     setPcScore (0);
     setMySelection ("");
-    // setGameKey (0);
+
   };
 
   return (
