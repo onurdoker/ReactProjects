@@ -17,9 +17,9 @@ function Home() {
           <li>
             <Link to="/project4">Project 4. Slider</Link>
           </li>
-          {/*<li>*/}
-          {/*  <Link to="/project5">Project 5. Rock, Paper, Scissors</Link>*/}
-          {/*</li>*/}
+          <li>
+            <Link to="/project5">Project 5. Rock, Paper, Scissors</Link>
+          </li>
         </ul>
       </div>
   );
