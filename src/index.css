@@ -29,6 +29,7 @@ body {
     max-width: 1000px;
     min-height: 100vh;
     margin: 0;
+    text-align: justify;
     place-items: center;
 }
 
@@ -47,6 +48,7 @@ button {
     border: 1px solid transparent;
     border-radius: 8px;
     background-color: #1A1A1A;
+
 }
 
 button:hover {
@@ -56,5 +58,10 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+p {
+    font-size: inherit;
+    text-align: justify;
 }
 

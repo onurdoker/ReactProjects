@@ -1,12 +1,15 @@
-import css from "./Project1.module.css";
-
 const Project1Button = ({
   handleFontSizeIncrement,
   handleFontSizeDecrement,
   fontSize,
 }) => {
   return (
-      <div className={css.p1_button}>
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "15px",
+      }}>
         <button onClick={handleFontSizeDecrement}>-</button>
         Font Size: {fontSize}
         <button onClick={handleFontSizeIncrement}>+</button>
