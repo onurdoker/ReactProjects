@@ -8,7 +8,6 @@ const Project1Button = ({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: "15px",
       }}>
         <button onClick={handleFontSizeDecrement}>-</button>
         Font Size: {fontSize}

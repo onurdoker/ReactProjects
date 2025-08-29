@@ -27,8 +27,7 @@ body {
     display: flex;
     min-width: 320px;
     max-width: 1000px;
-    min-height: 100vh;
-    margin: 0;
+    margin-top: 300px;
     text-align: justify;
     place-items: center;
 }
@@ -42,6 +41,7 @@ button {
     font-family: inherit;
     font-size: 1em;
     font-weight: 500;
+    margin: 15px;
     padding: 0.6em 1.2em;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -65,3 +65,8 @@ p {
     text-align: justify;
 }
 
+img {
+    width: 600px;
+    height: 400px;
+    margin-left: 15px;
+}
