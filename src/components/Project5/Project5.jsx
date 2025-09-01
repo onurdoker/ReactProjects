@@ -4,29 +4,50 @@ import Project5Compare from "./Project5Compare";
 import Project5ScoreBoard from "./Project5ScoreBoard";
 
 const Project5 = () => {
-  const [mySelection, setMySelection] = useState ("");
   const [userScore, setUserScore] = useState (0);
   const [pcScore, setPcScore] = useState (0);
+  const [gameResult, setGameResult] = useState ({
+    User: "",
+    PC: "",
+    Result: "",
+  });
 
   const handleMySelection = (mySelection) => {
-    setMySelection (mySelection);
+    const PCSell = Math.floor (Math.random () * 3);
+    const PcSelection = PCSell === 0 ? "Rock" : PCSell === 1 ? "Paper" : "Scissors";
 
-  };
+    let result;
 
-  const handleGameResult = (result) => {
-    if (result === "User Wins") {
-      console.log (result);
-      setUserScore (prev => prev + 1);
-    } else if (result === "PC Wins") {
-      setPcScore (prev => prev + 1);
+    if (mySelection === PcSelection) {
+      result = "Draw";
+    } else if (
+        (mySelection === "Rock" && PcSelection === "Scissors") ||
+        (mySelection === "Paper" && PcSelection === "Rock") ||
+        (mySelection === "Scissors" && PcSelection === "Paper")
+    ) {
+      result = "User Wins";
+      setUserScore ((prev) => prev + 1);
+    } else {
+      result = "PC Wins";
+      setPcScore ((prev) => prev + 1);
     }
+
+    setGameResult ({
+      mySelection,
+      PcSelection,
+      result,
+    });
+
   };
 
   const resetGame = () => {
     setUserScore (0);
     setPcScore (0);
-    setMySelection ("");
-
+    setGameResult ({
+      User: "",
+      PC: "",
+      Result: "",
+    });
   };
 
   return (
@@ -36,18 +57,13 @@ const Project5 = () => {
 
         <Project5Button handleMySelection={handleMySelection}/>
 
-        {mySelection && (
-            <Project5Compare mySelection={mySelection}
-                             handleGameResult={handleGameResult}
-            />
-        )}
+        {gameResult.mySelection && <Project5Compare gameResult={gameResult}/>}
 
-        <Project5ScoreBoard userScore={userScore}
-                            pcScore={pcScore}
-        />
+        {gameResult.mySelection && <Project5ScoreBoard userScore={userScore}
+                                                       pcScore={pcScore}
+        />}
 
         <button onClick={resetGame}>Reset Game</button>
-
 
       </div>
   );
