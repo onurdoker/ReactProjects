@@ -20,6 +20,11 @@ function Home() {
           <li>
             <Link to="/project5">Project 5. Rock, Paper, Scissors</Link>
           </li>
+          <li>
+            <Link to="/project6">Project 6. Dice Game </Link>
+          </li>
+
+
         </ul>
       </div>
   );
