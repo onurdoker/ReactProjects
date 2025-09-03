@@ -1,0 +1,17 @@
+.display {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    height: 65px;
+    margin: 0 auto 10px auto;
+    padding: 16px;
+    text-align: right;
+    color: #FFFFFF;
+    border: 1px solid #4A5568;
+    border-radius: 8px;
+    background-color: #2D3748;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

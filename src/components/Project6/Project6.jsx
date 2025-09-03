@@ -4,7 +4,7 @@ import Project6Compare from "./Project6Compare.jsx";
 
 const Project6 = () => {
   const [game, setGame] = useState ("");
-  
+
   return (
       <div>
         <h2>Project 6. Dice Game</h2>

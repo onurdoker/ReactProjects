@@ -1,6 +1,6 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Home() {
+function Home () {
   return (
       <div className="main">
         <h1>Main Page</h1>
@@ -22,6 +22,9 @@ function Home() {
           </li>
           <li>
             <Link to="/project6">Project 6. Dice Game </Link>
+          </li>
+          <li>
+            <Link to="/project7">Project 7. Calculator </Link>
           </li>
 
 

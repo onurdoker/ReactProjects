@@ -1,0 +1,108 @@
+.container {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 600;
+    width: 80px;
+    min-width: 60px;
+    height: 60px;
+    margin: 5px;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.buttonScientific {
+    background: linear-gradient(145deg, #8B5CF6, #7C3AED);
+    grid-column: span 1;
+}
+
+.buttonScientific:hover {
+    background: linear-gradient(145deg, #7C3AED, #6D28D9);
+    box-shadow: 0 4px 8px rgba(139, 92, 246, 0.3);
+}
+
+.buttonAC {
+    background: linear-gradient(145deg, #EF4444, #DC2626);
+    grid-column: span 1;
+}
+
+.buttonAC:hover {
+    background: linear-gradient(145deg, #DC2626, #B91C1C);
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.buttonCE {
+    background: linear-gradient(145deg, #6B7280, #4B5563);
+    grid-column: span 1;
+}
+
+.buttonCE:hover {
+    background: linear-gradient(145deg, #4B5563, #374151);
+    box-shadow: 0 4px 8px rgba(107, 114, 128, 0.3);
+}
+
+.buttonNumber {
+    background: linear-gradient(145deg, #4A5568, #2D3748);
+    grid-column: span 1;
+}
+
+.buttonNumber:hover {
+    background: linear-gradient(145deg, #2D3748, #1A202C);
+    box-shadow: 0 4px 8px rgba(74, 85, 104, 0.3);
+}
+
+.buttonOperator {
+    background: linear-gradient(145deg, #3B82F6, #2563EB);
+    grid-column: span 1;
+}
+
+.buttonOperator:hover {
+    background: linear-gradient(145deg, #2563EB, #1D4ED8);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.buttonOperator2 {
+    background: linear-gradient(145deg, #6B7280, #4B5563);
+    grid-column: span 1;
+}
+
+.buttonOperator2:hover {
+    background: linear-gradient(145deg, #4B5563, #374151);
+    box-shadow: 0 4px 8px rgba(107, 114, 128, 0.3);
+}
+
+.buttonEqual {
+    background: linear-gradient(145deg, #10B981, #059669);
+    grid-column: span 1;
+}
+
+.buttonEqual:hover {
+    background: linear-gradient(145deg, #2D3748, #1A202C);
+    box-shadow: 0 4px 8px rgba(74, 85, 104, 0.3);
+}
+
+.transparent {
+    cursor: not-allowed;
+    pointer-events: none;
+    background: transparent;
+    grid-column: span 3;
+}
